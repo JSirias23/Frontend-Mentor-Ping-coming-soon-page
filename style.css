@@ -1,0 +1,207 @@
+/* ## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Weights: 300, 600, 700
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  padding: 32px 64px;
+}
+
+.logo {
+  padding-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.cta {
+  padding: 24px 0;
+}
+
+.cta h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cta span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+.cta p {
+  text-align: center;
+  margin-bottom: 24px;
+  color: hsl(209, 33%, 12%);
+}
+
+/* Form */
+
+.form-control {
+  position: relative;
+  display: block;
+}
+
+.form-control input {
+  padding: 10px 15px;
+  width: 280px;
+  border-radius: 25px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+.form-control input::placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+}
+
+.form-control button {
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  color: #fff;
+  font-size: 10px;
+  box-shadow: 0 3px 8px hsl(0, 0%, 59%);
+  cursor: pointer;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  color: hsl(354, 100%, 66%);
+  font-size: 10px;
+  font-style: italic;
+  left: 15px;
+  top: 45px;
+}
+
+.error input {
+  border: 1px solid red;
+}
+
+.success input {
+  border: 2px solid green;
+}
+
+.error small {
+  visibility: visible;
+  position: absolute;
+  color: hsl(354, 100%, 66%);
+  font-size: 10px;
+  font-style: italic;
+  left: 15px;
+  top: 45px;
+}
+
+/* Dashboard */
+
+.example img {
+  width: 50%;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Footer */
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.social {
+  margin-bottom: 15px;
+}
+
+.social i {
+  margin-right: 15px;
+  color: hsl(223, 87%, 63%);
+}
+
+.social i:hover,
+.social i:active {
+  color: #fff;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.footer-box small {
+  font-size: 8px;
+  color: hsl(0, 0%, 59%);
+}
+
+/* Media Query */
+
+@media (max-width: 775px) {
+  .logo {
+    margin-top: 32px;
+  }
+
+  .form-control input {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .form-control button {
+    width: 100%;
+  }
+
+  .example img {
+    width: 80%;
+  }
+
+  .footer-box {
+    margin-top: 96px;
+  }
+
+  .cta h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
